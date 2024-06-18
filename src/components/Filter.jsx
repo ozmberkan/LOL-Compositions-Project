@@ -4,11 +4,9 @@ import { Tooltip } from "react-tooltip";
 
 const Filter = ({ gamestyles }) => {
   return (
-    <div className="w-full h-18 flex justify-center items-center mb-10 ">
-      <div className="flex justify-center items-center gap-x-2">
-        <p className="font-sourceSansPro text-base font-semibold text-[#f1f1f1]">
-          Filter by Gamestyles :
-        </p>
+    <div className="w-[90%] mt-2 mx-auto h-16 flex justify-start items-center mb-5">
+      <div className="flex justify-center items-center  gap-x-1">
+
         {gamestyles.map((item) => (
           <div
             key={item.id}

@@ -77,8 +77,8 @@ export default function Box({ comp, deleteBox }) {
           )}
         </button>
         <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-          <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-            <DialogPanel className="w-1/2 space-y-4 rounded-xl bg-[#101010] text-[#f1f1f1] p-12">
+          <div className="fixed inset-0 bg-black/20 flex w-screen items-center justify-center p-4">
+            <DialogPanel className="w-[600px] space-y-4 rounded-xl bg-[#101010] text-[#f1f1f1] p-12">
               <div className="w-full flex justify-end items-center">
                 <div className="p-2 rounded-full hover:bg-[#202020] transition-colors duration-300">
                   <IoMdClose
@@ -90,8 +90,8 @@ export default function Box({ comp, deleteBox }) {
               <DialogTitle className="font-bold w-full text-4xl px-3 font-unbounded flex justify-center pb-3 items-center">
                 {comp.name}
               </DialogTitle>
-              <Description className=" flex justify-center items-center gap-x-3">
-                <div className="flex w-full h-20 items-center justify-center  bg-[#202020] rounded-xl px-3 py-2">
+              <Description className=" flex flex-col gap-y-5 justify-center items-center">
+                <div className="flex w-full h-20 items-center justify-center -space-x-5  rounded-xl px-3 py-2">
                   {Object.keys(comp.images).map((key, index) => (
                     <img
                       key={index}
@@ -99,12 +99,12 @@ export default function Box({ comp, deleteBox }) {
                       alt={key}
                       data-tooltip-id="my-tooltip"
                       data-tooltip-content={`${comp.images[key].name}`}
-                      className="w-[70px] rounded-full border-[6px] border-[#202020]"
+                      className="w-[90px] rounded-full border-[8px] border-[#101010]"
                     />
                   ))}
                   <Tooltip id="my-tooltip" />
                 </div>
-                <div className="flex w-full h-20 items-center gap-x-2  bg-[#202020] rounded-xl justify-center">
+                <div className="flex w-full h-20 items-center gap-x-2   rounded-xl justify-center">
                   {comp.scaling.map((scale) => (
                     <div
                       key={scale.id}
@@ -115,7 +115,7 @@ export default function Box({ comp, deleteBox }) {
                 </div>
               </Description>
 
-              <div className="h-14 bg-[#202020] rounded-xl flex  justify-center items-center px-3 py-2">
+              <div className="h-14  rounded-xl flex  justify-center items-center px-3 py-2">
                 <p className="font-sourceSansPro font-semibold text-2xl text-[#7c7c7c] flex justify-center items-center gap-x-2">
                   <img src={comp.gamestyle.image} alt="" />
                   <span>{comp.gamestyle.type}</span>

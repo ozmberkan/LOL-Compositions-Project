@@ -16,28 +16,33 @@ export const dataComps = [
   {
     id: 1,
     name: "Ashe Protect",
-    images: {
-      ashe: {
+    images: [
+      {
+        id : 1,
         name: "Ashe",
         image: Ashe,
       },
-      garen: {
+       {
+        id :2,
         name: "Garen",
         image: Garen,
       },
-      hwei: {
+    {
+        id :3,
         name: "Hwei",
         image: Hwei,
       },
-      alitar: {
+      {
+        id :4,
         name: "Alistar",
         image: Alistar,
       },
-      ivern: {
+      {
+        id :5,
         name: "Ivern",
         image: Ivern,
       },
-    },
+    ],
     gamestyle: {
       image: ProtectVector,
       type: "Protect",
@@ -64,28 +69,33 @@ export const dataComps = [
   {
     id: 2,
     name: "Aatrox Attacker",
-    images: {
-      aatrox: {
+    images: [
+      {
+        id:1,
         name: "Aatrox",
         image: Aatrox,
       },
-      brand: {
+      {
+        id:2,
         name: "Brand",
         image: Brand,
       },
-      annie: {
+      {
+        id:3,
         name: "Annie",
         image: Annie,
       },
-      aphelios: {
+      {
+         id:4,
         name: "Aphelios",
         image: Aphelios,
       },
-      briar: {
+      {
+        id:5,
         name: "Briar",
         image: Briar,
       },
-    },
+    ],
     gamestyle: {
       image: EngageVector,
       type: "Engage",
