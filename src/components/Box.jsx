@@ -22,7 +22,7 @@ export default function Box({ comp, deleteBox }) {
     <div
       onMouseEnter={() => setIsShowing(true)}
       onMouseLeave={() => setIsShowing(false)}
-      className="w-full px-[50px] h-[100px] relative cursor-pointer transition-colors duration-500 flex justify-between items-center border rounded-full border-[#2d2d2d] hover:bg-[#292929] text-[#7c7c7c]"
+      className="w-full px-[50px] min-h-[100px] relative cursor-pointer transition-colors duration-500 flex justify-between items-center border rounded-full border-[#2d2d2d] hover:bg-[#292929] text-[#7c7c7c]"
     >
       {isShowing && (
         <div
@@ -45,10 +45,10 @@ export default function Box({ comp, deleteBox }) {
           />
         ))}
       </div>
-      <div className="w-full h-full  flex justify-center items-center">
-        <div className="flex justify-center items-center gap-x-2">
-          <img src={comp.gamestyle.image} alt={`${comp.gamestyle.type}`} />
-          {comp.gamestyle.type}
+      <div className="w-full h-full  flex justify-center items-center ">
+        <div className="flex justify-center font-sourceSansPro items-center gap-x-2 w-1/2 ">
+          <img src={comp.gamestyle.image} alt={`${comp.gamestyle.type}`} className=" object-cover " />
+          <span className="h-10 flex justify-center items-center">{comp.gamestyle.type}</span>
         </div>
       </div>
       <div className="w-full h-full flex justify-center items-center gap-x-3">
@@ -60,7 +60,7 @@ export default function Box({ comp, deleteBox }) {
           ></div>
         ))}
       </div>
-      <div className="w-full h-full  flex justify-center items-center">
+      <div className="w-full h-full font-sourceSansPro  flex justify-center items-center">
         {comp.added}
       </div>
       <div className="w-full h-full  flex justify-center items-center ">
@@ -78,7 +78,7 @@ export default function Box({ comp, deleteBox }) {
         </button>
         <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
           <div className="fixed inset-0 bg-black/20 flex w-screen items-center justify-center p-4">
-            <DialogPanel className="w-[600px] space-y-4 rounded-xl bg-[#101010] text-[#f1f1f1] p-12">
+            <DialogPanel className="w-[700px] space-y-4 rounded-xl bg-[#101010] text-[#f1f1f1] p-12">
               <div className="w-full flex justify-end items-center">
                 <div className="p-2 rounded-full hover:bg-[#202020] transition-colors duration-300">
                   <IoMdClose

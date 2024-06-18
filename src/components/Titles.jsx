@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Titles() {
   return (
-    <div className="w-full h-20 flex justify-between items-center px-[50px] text-[14px] text-[#7c7c7c] ">
+    <div className="w-full min-h-14 flex justify-between font-sourceSansPro items-center px-[70px] 0 text-[14px] text-[#7c7c7c] ">
       <span className=" h-full w-full flex justify-start items-center mr-12">
         Name
       </span>
