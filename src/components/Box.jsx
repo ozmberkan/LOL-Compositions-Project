@@ -83,8 +83,8 @@ export default function Box({ comp, deleteBox }) {
           )}
         </button>
         <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-          <div className="fixed inset-0 bg-black/20 flex w-screen items-center justify-center p-4">
-            <DialogPanel className="w-[700px] space-y-4 rounded-xl bg-[#101010] text-[#f1f1f1] p-12">
+          <div className="fixed inset-0  flex w-screen items-center justify-center p-4">
+            <DialogPanel className="w-[700px] space-y-4 rounded-xl transition-all duration-700  outline outline-offset-2 outline-[#ff6d00]/20 shadow-[0_0px_50px_rgba(255,_57,_0)] bg-gradient-to-t to-[#ff3900] from-[#141414] text-[#f1f1f1] p-12">
               <div className="w-full flex justify-end items-center">
                 <div className="p-2 rounded-full hover:bg-[#202020] transition-colors duration-300">
                   <IoMdClose
@@ -105,7 +105,7 @@ export default function Box({ comp, deleteBox }) {
                       alt={image.name}
                       data-tooltip-id="my-tooltip"
                       data-tooltip-content={`${image.name}`}
-                      className="w-[90px] rounded-full border-[8px] border-[#101010]"
+                      className="w-[90px] rounded-full "
                     />
                   ))}
                   <Tooltip id="my-tooltip" />
@@ -121,9 +121,9 @@ export default function Box({ comp, deleteBox }) {
                 </div>
               </Description>
               <div className="h-14  rounded-xl flex  justify-center items-center px-3 py-2">
-                <p className="font-sourceSansPro font-semibold text-2xl text-[#7c7c7c] flex justify-center items-center gap-x-2">
-                  <img src={comp.gamestyle.image} alt="" />
-                  <span>{comp.gamestyle.type}</span>
+                <p className="font-sourceSansPro font-semibold text-2xl text-[#f1f1f1] flex justify-center items-center gap-x-2">
+                  <img src={comp.gamestyle.image} alt="" className="" />
+                  <span className="font-unbounded">{comp.gamestyle.type}</span>
                 </p>
               </div>
             </DialogPanel>
