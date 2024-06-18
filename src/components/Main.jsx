@@ -3,7 +3,6 @@ import Box from "./Box";
 import Titles from "./Titles";
 
 const Main = ({ datas, setDatas }) => {
-
   const deleteBox = (id) => {
     const updatedBox = datas.filter((data) => data.id !== id);
     setDatas(updatedBox);

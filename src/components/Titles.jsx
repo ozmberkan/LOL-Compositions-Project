@@ -16,7 +16,7 @@ export default function Titles() {
         Scaling
       </span>
       <span className=" h-full w-full flex justify-center items-center">
-        Added
+        Added Date
       </span>
       <span className=" h-full w-full flex justify-center items-center"></span>
     </div>
