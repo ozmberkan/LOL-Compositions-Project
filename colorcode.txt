@@ -1,0 +1,3 @@
+mainbg : #141414
+mainarea : #1C1C1C - filterbg
+hover: #292929
