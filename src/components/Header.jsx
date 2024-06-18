@@ -7,8 +7,8 @@ export default function Header() {
       <div className="flex justify-center items-center gap-x-2">
         <img src={shirtVector} className="w-7" />
         <span className="font-unbounded text-2xl text-[#f1f1f1]">
-          <b>LOL </b>Compositions |{" "}
-          <span className="text-xs text-[#666666]">ozmberkan</span>
+          <b>LOL </b>Compositions |
+          <span className="text-xs text-[#666666]"> ozmberkan v1.0</span>
         </span>
       </div>
     </div>

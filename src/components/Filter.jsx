@@ -6,7 +6,7 @@ import { GrPowerReset } from "react-icons/gr";
 const Filter = ({ initialStyles, filterBox, resetBox }) => {
   return (
     <div className="w-[90%] h-20 mx-auto flex justify-between items-center">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-x-1">
         {initialStyles.map((style, index) => (
           <div
             key={index}
@@ -25,7 +25,7 @@ const Filter = ({ initialStyles, filterBox, resetBox }) => {
       </div>
       <div
         onClick={resetBox}
-        className="w-12 h-12 bg-[#212121] flex rounded-full cursor-pointer hover:bg-[#2c2c2c] transition-colors duration-300  justify-center items-center"
+        className="w-12 h-12 bg-[#212121] flex rounded-full hover:transition-all duration-700 hover:duration-700 outline outline-offset-2 outline-transparent hover:outline-[#ff6d00]/20 hover:shadow-[0_0px_100px_rgba(255,_57,_0)] cursor-pointer bg-gradient-to-t hover:from-[rgb(255,57,0)] hover:to-[#ff6d00] justify-center items-center"
       >
         <GrPowerReset size={20} className="text-white" />
       </div>

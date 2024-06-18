@@ -74,7 +74,7 @@ export default function Box({ comp, deleteBox }) {
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
           onClick={() => setIsOpen(true)}
-          className="p-3 rounded-full border border-[#2d2d2d] ml-auto cursor-pointer hover:bg-[#07C5AF] transition-colors duration-500"
+          className="p-3 rounded-full border border-[#2d2d2d] ml-auto cursor-pointer hover:transition-all duration-700 hover:duration-700 outline outline-offset-2 outline-transparent hover:outline-[#ff6d00]/20 hover:shadow-[0_0px_30px_rgba(255,_57,_0)] bg-gradient-to-t hover:from-[rgb(255,57,0)] hover:to-[#ff6d00]"
         >
           {isHover ? (
             <img src={DetailHoverButton} alt="HoverDetail" />
